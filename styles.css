@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 99;
+}
+.header-left,
+.header-right{
+    display: flex;
+    align-items: center;
+}
+.header-left .logo img{
+    width: 156px;
+    height: 42px;
+}
+.header-left .nav a,
+.header-right a{
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+}
+.header-left .nav li,
+.header-left .nav-list{
+    display: flex;
+    padding-right: 30px;
+}
+.header-left .nav{
+    margin-left: 45px;
+}
+.header-left .nav a:hover{
+    color: #77DADA;
+    /* border-bottom: 2px solid #F9FAFB; */
+}
+.header-right button{
+    border: none;
+    border-radius: 25px;
+    padding: 5px;
+    width: 136;
+    height: 47px;
+    padding: 10px 16px;
+    background-color: #77DADA;
+}
+.header-right button:hover{
+    color: white;
+    background-color: #0e4f4f;
+    cursor: pointer;
+}
+.content{
+    padding: 96px 80px ;
+
+}
+.Home_bg-video{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+}
+.home-banner .find-boat{
+    position: absolute;
+    bottom: -50px;
+    transform: translateX(-50%);
+    left: 50%;
+    border: 1px solid #ddd;
+    padding: 30px 24px 24px;
+    width: 1008px;
+    margin: auto;
+    border-radius: 30px;
+    text-align: center;
+    background-color: white;
+    margin-top: auto;
+}
+.home-banner{
+    height: auto;
+    position: relative;
+}
+.content .box-on-img{
+    width: 45%;
+}
+.find-boat h1{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.find-boat h3{
+    opacity: 0.7;
+    font-weight: 500;
+}
+.nav2{
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+}
+.find-boat .search{
+    border: 1px solid #ccc;
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+}
+.find-boat .search-no-boder{
+    border: none;
+    padding: 18px 10px;
+}
+.search .ti-search{
+    margin-left: 30px;
+    margin-top: 16px;
+    opacity: 0.4;
+}
+.nav2 .all-places{
+    margin-left: 30px;
+    list-style: none;
+}
+.nav2 .all-places a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+.nav2 .all-places > li{
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 16px 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.nav2 .all-places{
+    display: flex;
+}
+.all-places .ti-angle-down{
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.nav2 .find button{
+    border-radius: 20px;
+    padding: 16px 5px;
+    width: 130px;
+    background-color: #77DADA;
+    border: none;
+    cursor: pointer;
+}
+.nav2 .all-places > li:hover{
+    box-shadow: 0 0 10px #CAF8F8;
+
+}
+.nav2 li:hover .sub-nav2-1,
+.nav2 li:hover .sub-nav2-2{
+    display: block;
+}
+.nav2 > li:hover > a,
+.nav2 .sub-nav2-1 li:hover,
+.nav2 .sub-nav2-2 li:hover{
+    color: #000;
+    background-color: #F9FAFB;
+    
+}
+.nav2 .sub-nav2-1,
+.nav2 .sub-nav2-2{
+    min-width: 160px;
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0,0, 0.1);
+    border-radius: 5px;
+}
+.nav2 .sub-nav2-1{
+    top: 190px;
+    left: 355px;
+    width: 230px;
+}
+.nav2 .sub-nav2-2{
+    top: 190px;
+    left: 596px;
+    width: 230px;
+}
+.nav2 .sub-nav2-1 li,
+.nav2 .sub-nav2-2 li{
+    text-align: start;
+    padding: 12px 10px;
+}
+.new-product{
+    display: grid;
+    grid-template-columns: calc(60% - (30px * 1/2)) calc(40% - (30px * 1/2));
+    grid-column-gap: 30px;
+    padding: 100px 100px 0 100px;
+}
+.new-product .text-new-boat img{
+    margin-top: 30px;
+}
+.new-product .text-new-boat{
+    margin-top: 50px;
+    font-size: 20px;
+    margin-right: 100px;
+}
+.new-product .text-info{
+    margin-top: 50px;
+    line-height: 30px;
+    font-weight: 500;
+}
+.list-boat{
+    padding: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+}
+.ticket-boat > .view-all-boat{
+    text-align: center;
+    margin-top: 40px;
+}
+.ticket-boat .view-all-boat a{
+    text-decoration: none;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 30px;
+    color: black;
+}
+.view-all-boat .ti-arrow-right{
+    margin-left: 5px;
+}
+.view-all-boat a:hover{
+    background-color: #F9FAFB;
+
+}
+.list-boat .boat{
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 4px rgba(0, 0,0 , 0.3);
+    height: 450px;
+    width: 400px;
+    padding: 20px 20px;
+}
+.list-boat .boat .img-heading{
+    width: 350px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 0 6px rgba(0, 0,0 , 0.8);
+    margin-bottom: 10px;
+    position: relative;
+    top: 0;
+}
+.ti-location-pin{
+    margin-right: 5px;
+}
+.boat .location{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: inline;
+    padding: 3px 10px;
+    margin: 0px 15px;
+    background-color:#F2F4F7;
+    font-size: 14px;
+    font-weight: 300;
+}
+.boat .text-boat{
+    font-size: 18px;
+    color: #475467;
+    margin: 10px 0px;
+}
+.boat .icon-ship{
+    width: 20px;
+    margin-right: 4px;
+}
+.boat .name-boat{
+    font-size: 16px;
+}
+.boat .price{
+    font-size: 20px;
+    margin-top: 38px;
+    margin-left: 20px;
+    color: #475467;
+}
+.boat .footer-price{
+    display: flex;
+    align-items: center;
+}
+.boat button{
+    margin-left: 50px;
+    margin-top: 30px;
+    background-color: #77DADA;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 20px;
+}
+.boat button:hover{
+    background-color: #0e4f4f;
+    color: white;
+}
+.text-heading{
+    display: grid;
+    grid-template-columns: calc(50% - (50px * 1/2)) calc(40% - (30px * 1/2));
+    grid-column-gap: 30px;
+    padding: 100px 100px 0 100px;
+}
+.customer-cmt{
+    background-color: #F3FFFF;
+    height: 600px;
+}
+.customer-cmt .danh-gia img{
+    margin-top: 20px;
+}
+.customer-cmt .info-text{
+    color: #475467  ;
+}
+.khachhang-cmt{
+    margin-left: 120px;
+    margin-top: 80px;
+    display: flex;
+    height: 180px;
+}
+.khachhang-cmt .name-boat-cmt{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.khachhang-cmt p{
+    width: 1000px;
+    margin-bottom: 20px;
+}
+.khachhang-cmt .name-customer{
+    font-size:20px ;
+}
+.ti-files{
+    margin-right: 30px;
+    font-size: 30px;
+}
+.customer-cmt .list-customer{
+    font-size: 16px;
+    display: flex;
+    list-style: none;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+.customer-cmt .list-customer li{
+    padding: 10px 30px;
+    border: 1px solid #ccc;
+    margin-right: 30px;
+    border-radius: 30px;
+    background-color: #F9FAFB;
+
+}
+.tourist-attraction{
+   text-align: center;
+   height: auto;
+}
+.tourist-attraction .heading-text{
+    margin-top: 100px;
+}
+.tourist-attraction .heading-text p{
+    opacity: 0.8;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.list-places{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+    padding: 0 100px;
+}
+.list-places .location{
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-shadow: 0 0 4px rgba(0, 0,0 , 0.3);
+    height: 360px;
+    margin-bottom: 30px;
+}
+.list-places .location img{
+    padding: 20px;
+}
+.list-places .location h1{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.list-places .location a{
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+}
+.doi-tac .text-doitac h1{
+    margin-bottom: 10px;
+}
+.doi-tac{
+    background-color: #F2F4F7;
+    height: auto;
+}
+.doi-tac .text-heading .text-doita h1{
+    color: #475467;
+}
+.logo-doitac{
+    margin-bottom: 50px;
+    padding: 20px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.logo-doitac img{
+    margin-bottom: 50px;
+    margin-right: 30px;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 130px;
+    background-color: #101828;
+    height: auto;
+    color:#D0D5DD;
+}
+.footer-left{
+    width: 400px;
+}
+.footer-left img{
+    width: 200px;
+    margin-bottom: 30px;
+}
+.footer-left p{
+    margin-bottom: 20px;
+}
+.footer .name{
+    color: #667085;
+    font-size: ;
+    margin-bottom: 20px;
+}
+.footer-mid-1 ul,
+.footer-mid-2 ul,
+.footer-right ul{
+    list-style: none;
+    text-decoration: none;
+}
+.footer-mid-1 a,
+.footer-mid-2 a,
+.footer-right a{
+    text-decoration: none;
+    color: #D0D5DD;
+
+}
+.footer-mid-1 li,
+.footer-mid-2 li,
+.footer-right li{
+    margin-bottom: 10px;
+}
+
+
